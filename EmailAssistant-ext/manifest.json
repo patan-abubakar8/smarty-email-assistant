@@ -1,0 +1,29 @@
+{
+  "name": "Smarty - Email Assistant",
+  "description": "Smarty is a AI - Powered Chrome extension that helps you manage your emails with ease. It allows you to generate email responses automatically",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": ["http://localhost:8080/*","*://mail.google.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Smarty - Email Assistant",
+    "default_icon": "icons/Smarty.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://mail.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end",
+      "css": ["content.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/Smarty.png"],
+      "matches": ["*://mail.google.com/*"]
+    }
+  ]
+}

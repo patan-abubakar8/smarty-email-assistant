@@ -1,0 +1,70 @@
+body {
+	background: linear-gradient(120deg, rgba(245,247,250,0.95) 0%, rgba(220,230,240,0.85) 100%);
+	font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+	margin: 0;
+	min-height: 100vh;
+}
+
+.app-container {
+	background: rgba(255,255,255,0.85);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+	border-radius: 18px;
+	padding: 2rem;
+	margin-top: 2rem;
+	transition: box-shadow 0.3s;
+}
+
+h1, .MuiTypography-h3 {
+		color: #1a237e;
+		background: linear-gradient(90deg, #1a237e 60%, #64b5f6 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-weight: 700;
+}
+
+.MuiPaper-root {
+	background: rgba(240,248,255,0.85);
+	border-radius: 14px;
+	box-shadow: 0 4px 24px 0 rgba(31, 38, 135, 0.12);
+}
+
+.MuiButton-containedPrimary {
+	background: linear-gradient(90deg, #1976d2 60%, #64b5f6 100%);
+	color: #fff;
+	font-weight: 600;
+	box-shadow: 0 2px 8px rgba(25, 118, 210, 0.15);
+	border-radius: 8px;
+	transition: background 0.3s;
+}
+.MuiButton-containedPrimary:hover {
+	background: linear-gradient(90deg, #1565c0 60%, #42a5f5 100%);
+}
+
+.MuiTextField-root {
+	background: rgba(255,255,255,0.7);
+	border-radius: 8px;
+}
+
+.MuiOutlinedInput-root {
+	background: rgba(255,255,255,0.7);
+	border-radius: 8px;
+}
+
+.MuiButton-outlined {
+	border-color: #1976d2;
+	color: #1976d2;
+	background: rgba(100,181,246,0.08);
+	border-radius: 8px;
+}
+.MuiButton-outlined:hover {
+	background: rgba(100,181,246,0.18);
+}
+
+.generated-reply {
+	background: rgba(255,255,255,0.6);
+	border-left: 4px solid #1976d2;
+	padding: 1rem;
+	margin-top: 1rem;
+	border-radius: 8px;
+}
